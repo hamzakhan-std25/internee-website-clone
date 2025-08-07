@@ -5,7 +5,7 @@ import arrowPng from '../assets/images/arrow.png'
 export function InternshipCard(props) {
     return (
         <div className="intern-card">
-            <div className="img-container"><img src={props.url} alt="graphics" /></div>
+            <div className="img-container"><img src={props.url} alt={props.title} /></div>
             <div className="details">
                 <h4>{props.title}</h4>
                 <a href='#'><img src={arrowPng} alt="arrow" /><span>Apply Now</span></a>
@@ -18,6 +18,9 @@ export function InternshipCard(props) {
 
 
 export function DetailCard({ card }) {
+
+
+    const isHaveList = card.detailList.length>0;
     return (
 
         <div className="card">
@@ -36,16 +39,23 @@ export function DetailCard({ card }) {
                 )}
 
             </ul>
+           {
+            isHaveList ? "" :  <a href="#" className='learn-btn'>{card.btn}
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4 ml-1">
+                    <path d="m9 18 6-6-6-6"></path>
+                </svg>
+            </a>
+           }
         </div>
     );
 }
 
 
-export function BasicCard({card}) {
+export function BasicCard({ card }) {
     return (
         <div className="card basic-card">
             <div className="icon">
-             {card.iconSvg()}
+                {card.iconSvg()}
             </div>
             <div className="l-details">
                 <h2>{card.title}</h2>
