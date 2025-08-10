@@ -20,7 +20,7 @@ export function InternshipCard(props) {
 export function DetailCard({ card }) {
 
 
-    const isHaveList = card.detailList.length>0;
+    const isHaveList = card.detailList.length > 0;
     return (
 
         <div className="card">
@@ -39,13 +39,13 @@ export function DetailCard({ card }) {
                 )}
 
             </ul>
-           {
-            isHaveList ? "" :  <a href="#" className='learn-btn'>{card.btn}
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4 ml-1">
-                    <path d="m9 18 6-6-6-6"></path>
-                </svg>
-            </a>
-           }
+            {
+                isHaveList ? "" : <a href="#" className='learn-btn'>{card.btn}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-4 w-4 ml-1">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </a>
+            }
         </div>
     );
 }
@@ -61,6 +61,24 @@ export function BasicCard({ card }) {
                 <h2>{card.title}</h2>
                 <p>{card.details()}</p>
             </div>
+        </div>
+
+    );
+}
+
+
+export function KnowledgeCard({ card }) {
+    return (
+        <div className="card">
+            <div className="card-t">
+                <div className="icon">
+                    {card.iconSvg()}
+                </div>
+                <h2>{card.title}</h2>
+            </div>
+            <p>{card.details}</p>
+
+
         </div>
 
     );
