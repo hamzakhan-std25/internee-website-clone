@@ -1758,6 +1758,7 @@ nav {
 .become-amb {
     width: 100%;
     margin-bottom: 4rem;
+    padding: 0 2rem;
 }
 
 .become-amb-in {
@@ -1867,6 +1868,7 @@ nav {
     align-items: center;
     justify-content: start;
     flex-direction: row;
+    gap: 4rem;
     padding: 0;
     border-radius: 0;
     box-shadow: 0 4px 6px -1px rgb(0, 0, 0, .1);
@@ -1877,6 +1879,10 @@ nav {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .15s;
+}
+
+.pot-container .card:hover {
+    transform: scale(1.1);
 }
 
 .card .l-gray {
@@ -1913,23 +1919,25 @@ nav {
     color: var(--text-light);
 }
 
-.why-us{
+.why-us {
     max-width: 96rem;
     margin: auto;
     padding: 4rem 1rem;
 }
-.why-us h3{
+
+.why-us h3 {
     font-size: 20px;
 }
-.chose-cards{
+
+.chose-cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 1.25rem;
 }
 
-.c-card{
-    background: rgb(249 250 251 );
+.c-card {
+    background: rgb(249 250 251);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -1937,21 +1945,124 @@ nav {
     align-items: start;
 }
 
-.c-icon{
+
+.c-icon {
     color: var(--theme-color);
     margin-bottom: 1rem;
 }
-.c-icon svg{
+
+.c-icon svg {
     width: 3rem;
     height: 3rem;
 }
-.c-card h3{
+
+.c-card h3 {
     font-size: 20px;
     margin-bottom: .75rem;
 }
-.c-card p{
+
+
+
+
+/* graduate programs page styling -------------------------------------------------- */
+
+.gp-page {
+    width: 100%;
 
 }
+
+.gp-head {
+    padding: 5rem 0;
+}
+
+.gp-head .head-container {
+    max-width: 80rem;
+    padding: 0 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.gp-head h1 {
+    font-size: 60px;
+}
+
+.gp-head p {
+    font-size: 18px;
+    margin: 1rem 9rem;
+    margin-bottom: 0;
+    color: var(--text-light);
+}
+
+.explore {
+    max-width: 72rem;
+    padding: 4rem;
+    margin: auto;
+}
+
+.explore h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.industry-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
+.industry-cards .card {
+    border-radius: 20px;
+    transition: all .4s ease-in;
+    padding: 0;
+    /* display: block; */
+}
+
+.ex-img {
+    position: relative;
+}
+
+.ex-img .ex-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0, .5), transparent);
+}
+
+.ex-img img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+    height: 16rem;
+}
+
+.industry-cards .card:hover {
+    transform: scale(1.1);
+}
+
+.industry-cards .card:hover .ex-content h3 {
+    color: var(--theme-color);
+}
+
+.ex-content {
+    padding: 1.5rem;
+
+}
+
+.ex-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ex-content p {
+    font-size: 14px;
+    padding: 0;
+    margin-top: .75rem;
+}
+
 
 
 
@@ -1992,6 +2103,24 @@ nav {
         display: none;
     }
 
+    .f-1,
+    .f-2,
+    .f-3 {
+        flex-direction: column;
+        page: 2rem;
+        align-items: start;
+    }
+
+    .f-2 .right,
+    .f-1 .search {
+        margin-top: 2rem;
+    }
+
+    .become-amb {
+        display: none;
+    }
+
+
 
 
 
@@ -2004,7 +2133,7 @@ nav {
 
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
     .menu {
         display: none;
     }
@@ -2058,6 +2187,23 @@ nav {
         gap: 8rem;
     }
 
+    .industry-cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .explore {
+        padding: 2rem 1rem;
+    }
+  
+  
+
+
+
+
+
+
+
+
 
 
 }
@@ -2067,5 +2213,10 @@ nav {
     .img-group a {
         width: 160px;
         height: 140px;
+    }
+
+     .pot-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem;
     }
 }

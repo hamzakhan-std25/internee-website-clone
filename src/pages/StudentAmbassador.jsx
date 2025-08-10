@@ -17,16 +17,20 @@ export default function StudentAmbassador() {
       <div className="become-amb">
         <div className="become-amb-in">
           <div className="become-amb-container">
-            <h2>Lorem ipsum dolor sit. anmome</h2>
-            <div className='amb-btns'><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat sint tenetur ab cum totam qui consequatur quia perferendis, autem distinctio.</p>
+            <h2>Become a Student Ambassador</h2>
+            <div className='amb-btns'><p>Join our global community of students who are passionate about building AI-driven solutions with Microsoft technology. Accelerate innovation and grow the skills you need to have greater impact in the projects and communities that matter to you.</p>
               <a href="#" className="btn-green">Get Started</a>
             </div>
             <div className="bil-container">
               <div className="img-content"><img src={building} alt="bilding" />
               </div>
               <div className="unlock">
-                <h2>Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure veritatis cumque numquam fuga dolorum vitae veniam dolore repellendus quibusdam?</p>
+                <h2>Unlock Your Potential</h2>
+                <p>Discover new opportunities and enhance your skills.
+
+Gain real-world experience with hands-on projects.
+
+Connect with a network of like-minded individuals.</p>
               </div>
             </div>
 
@@ -136,7 +140,7 @@ export default function StudentAmbassador() {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, nobis.
             </p>
           </div>
-          
+
           <div className="c-card">
             <div className="c-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-12 h-12 text-[#43A724] dark:text-[#43A724] mb-4">
