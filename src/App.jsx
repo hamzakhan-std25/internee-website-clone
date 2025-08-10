@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './styles/global.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Footer from './components/footer'
 import Home from './pages/Home'     
 import Internship from './pages/Internship'
