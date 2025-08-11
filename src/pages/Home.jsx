@@ -8,6 +8,7 @@ import pic4 from '../assets/icons/logo1.png'
 import pic5 from '../assets/icons/nics.png'
 import pic6 from '../assets/icons/pitb.png'
 import { BasicCard, DetailCard, InternshipCard, KnowledgeCard } from '../components/Card'
+import CountUp from 'react-countup'
 
 
 export default function Home() {
@@ -1192,17 +1193,17 @@ export default function Home() {
 
       <div className="counters">
         <div className="counter">
-          <p className='c-head'>20+</p>
+          <p className='c-head'><CountUp enableScrollSpy={true} end={20}/>+</p>
           <p>Expert-led Internships</p>
         </div>
         <div className="pipe"></div>
         <div className="counter">
-          <p className='c-head'>1,500+</p>
+          <p className='c-head'><CountUp enableScrollSpy={true} end={1500}/>+</p>
           <p>Successful Graduates</p>
         </div>
         <div className="pipe"></div>
         <div className="counter">
-          <p className='c-head'>50,000+</p>
+          <p className='c-head'><CountUp enableScrollSpy={true} end={50000}/>+</p>
           <p>LinkedIn Followers</p>
         </div>
 

@@ -40,7 +40,7 @@ export default function Navbar() {
         <NavLinks isSmallScreen={false}/>
         <div className="menu-btns">
           <a href="#" className='btn-green'>Job portal</a>
-          <a href="#" className='btn-white'>Dashboard</a>
+          <a href="#" className='btn-green btn-bottom'>Sign in</a>
           <div className="user-profile"><img src={profile_pic} alt="profile pic" /></div>
           <div className="theme-btn" onClick={changeTheme}>
             {isDarkMode ?
