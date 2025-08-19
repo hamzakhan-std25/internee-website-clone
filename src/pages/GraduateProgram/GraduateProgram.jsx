@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/global.css'
-import ind_img from '../assets/images/industry.jpg'
-import ind2_img from '../assets/images/industry-2.webp'
-import ind3_img from '../assets/images/industry-3.avif'
+import '../../styles/global.css'
+import ind_img from '../../assets/images/industry.jpg'
+import ind2_img from '../../assets/images/industry-2.webp'
+import ind3_img from '../../assets/images/industry-3.avif'
 
 export default function GraduateProgram() {
   return (

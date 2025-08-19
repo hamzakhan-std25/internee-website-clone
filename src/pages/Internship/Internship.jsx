@@ -1,5 +1,5 @@
 import React from 'react'
-import { InternshipCard } from '../components/Card';
+import { InternshipCard } from '../../components/Card';
 import CountUp from 'react-countup';
 
 

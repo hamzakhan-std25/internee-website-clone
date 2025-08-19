@@ -1,10 +1,11 @@
+import { useState } from 'react'
 import './styles/global.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'     
-import Internship from './pages/Internship'
-import GraduateProgram from './pages/GraduateProgram'
-import StudentAmbassador from './pages/StudentAmbassador'
+import Internship from './pages/Internship/Internship'
+import GraduateProgram from './pages/GraduateProgram/GraduateProgram'
+import StudentAmbassador from './pages/StudentAmbassador/StudentAmbassador'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 

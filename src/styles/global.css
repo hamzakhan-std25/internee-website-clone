@@ -209,6 +209,7 @@ nav {
 .hamburger svg {
     width: 34px;
     height: 34px;
+    color: white;
 }
 
 .list-menu {
@@ -356,6 +357,10 @@ nav {
 
 .collaboration p {
     text-align: center;
+
+}
+.clp {
+    padding:  2rem 0;
 }
 
 .img-group {

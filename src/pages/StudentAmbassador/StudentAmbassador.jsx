@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/global.css'
-import amb_img from '../assets/images/ambasador-pic.avif'
-import building from '../assets/images/bilding.avif'
+import '../../styles/global.css'
+import amb_img from '../../assets/images/ambasador-pic.avif'
+import building from '../../assets/images/bilding.avif'
 
 
 export default function StudentAmbassador() {

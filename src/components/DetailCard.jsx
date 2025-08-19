@@ -1,23 +1,6 @@
-import React from 'react'
-import arrowPng from '../assets/images/arrow.png'
+import React from 'react';  
 
-
-export function InternshipCard(props) {
-    return (
-        <div className="intern-card">
-            <div className="img-container"><img src={props.url} alt={props.title} /></div>
-            <div className="details">
-                <h4>{props.title}</h4>
-                <a href='#'><img src={arrowPng} alt="arrow" /><span>Apply Now</span></a>
-            </div>
-        </div>
-
-    );
-}
-
-
-
-export function DetailCard({ card }) {
+export default function DetailCard({ card }) {
 
 
     const isHaveList = card.detailList.length > 0;
@@ -49,39 +32,3 @@ export function DetailCard({ card }) {
         </div>
     );
 }
-
-
-export function BasicCard({ card }) {
-    return (
-        <div className="card basic-card">
-            <div className="icon">
-                {card.iconSvg}
-            </div>
-            <div className="l-details">
-                <h2>{card.title}</h2>
-                <p>{card.details}</p>
-            </div>
-        </div>
-
-    );
-}
-
-
-export function KnowledgeCard({ card }) {
-    return (
-        <div className="card">
-            <div className="card-t">
-                <div className="icon">
-                    {card.iconSvg}
-                </div>
-                <h2>{card.title}</h2>
-            </div>
-            <p>{card.details}</p>
-
-
-        </div>
-
-    );
-}
-
-
