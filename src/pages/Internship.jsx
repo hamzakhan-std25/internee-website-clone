@@ -58,8 +58,8 @@ export default function Internship() {
           <p>Choose from a wide range of internship opportunities and kickstart your professional journey.</p>
 
           <div className="intern-card-container cards">
-            {internships.map(internship => (
-              <InternshipCard url={internship.imgUrl} title={internship.title} />
+            {internships.map((internship, idx) => (
+              <InternshipCard key={idx} url={internship.imgUrl} title={internship.title} />
             ))}
           </div>
         </div>

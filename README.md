@@ -4,7 +4,6 @@ A modern multi-page React application for showcasing internship opportunities, g
 
 ---
 
-
 ## 📌 Features
 - **Multi-page routing** with `react-router-dom`
 - **Responsive design** with global styling
@@ -29,9 +28,7 @@ src/
 ├── App.jsx # Main application routes
 └── main.jsx # Entry point
 
-
 ---
-
 
 ## 🚀 Getting Started
 
@@ -39,52 +36,41 @@ src/
 ```bash
 git clone https://github.com/your-username/internee-pk-react.git
 cd internee-pk-react
-2️⃣ Install Dependencies
-bash
-Always show details
+```
 
-Copy
+### 2️⃣ Install Dependencies
+```bash
 npm install
-3️⃣ Run the Development Server
-bash
-Always show details
+```
 
-Copy
+### 3️⃣ Run the Development Server
+```bash
 npm run dev
+```
 The app will be available at http://localhost:5173 (or as specified by Vite).
 
-🛠️ Tech Stack
-React (with hooks)
+## 🛠️ Tech Stack
+- React (with hooks)
+- React Router DOM
+- Vite (for fast development)
+- CSS (global styling)
+- Lucide Icons (SVG icons)
+- react-countup (animated counters)
 
-React Router DOM
-
-Vite (for fast development)
-
-CSS (global styling)
-
-Lucide Icons (SVG icons)
-
-react-countup (animated counters)
-
-🎥 Preview
+## 🎥 Preview
 (Replace preview.gif with your actual file once created)
 
-📸 Screenshots
+## 📸 Screenshots
 (Add screenshots here to showcase the UI)
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License — feel free to use and modify for your own projects.
 
-🤝 Contributing
+## 🤝 Contributing
 Pull requests are welcome! If you’d like to improve this project:
 
-Fork the repository
-
-Create your feature branch (git checkout -b feature/NewFeature)
-
-Commit your changes (git commit -m 'Add some feature')
-
-Push to the branch (git push origin feature/NewFeature)
-
-Open a pull request
-"""
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
+5. Open a pull request
