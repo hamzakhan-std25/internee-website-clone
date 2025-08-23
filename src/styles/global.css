@@ -1,7 +1,17 @@
-
-
 :root {
-
+    --unlock-bg : #f5f5f5;
+    --footer-bg: #eaeaea;
+    --journey-bg : rgb(240, 240, 240);
+    --rotated-riben-bg : rgb(223 244 232);
+    --label-bg: black;
+    --riben-bg: white;
+    --basic-bg: rgba(255, 252, 252, 0.8);
+    --phase-bg: rgb(250, 250, 250);
+    --color-reverse: white;
+    --bg-reverse: black;
+    
+    /*  need change above var */
+    --img-filter: none;
     --theme-bg: #ffffff;
     --theme-item-bg: #ededed;
     --theme-item-hover: #e5e5e5;
@@ -11,28 +21,46 @@
     --theme-card-text: #4b5563;
     --icon-color: #ffffff;
     --text-light: rgb(101, 101, 101);
-
-
+    --card-bg: #ffffff;
+    --section-bg: #ffffff;
+    --bg-accent: rgb(195, 230, 222);
+    
+    
     --btn-green: #4caf31;
     --bg-white: rgb(255, 255, 255);
     --theme-color: #43a724;
-
-
-
+    
+    
+    
     font-family: sans-serif;
-
+    
 }
 
 [data-theme="dark"] {
-
+    
+    --unlock-bg : #262626;
+    --bg-reverse: white;
+    --label-bg: #e5e7eb;
+    --riben-bg: #1f2937;
+    --basic-bg: rgba(45, 45, 45, 0.8);
+    --card-bg: #1e1e1e;
+    --journey-bg : rgb(86, 84, 84);
+    --color-reverse: black;
+    --footer-bg: #1f1f1f;
+    
+    --phase-bg: rgb(43, 41, 41);
     --theme-bg: #000000;
     --theme-card-bg: #43a72448;
+    --section-bg: transform;
     --theme-card-text: #9ca3af;
     --theme-text-primary: #ffff;
     --theme-text-secondary: #d1d5db;
-    --theme-item-bg: #4c4a4a;
+    --theme-item-bg: black;
     --theme-item-hover: #999898;
     --icon-color: #ffeb3b;
+    --img-filter: grayscale();
+    --rotated-riben-bg : rgb(18, 18, 18);
+    --bg-accent: rgb(59, 69, 67);
 }
 
 body {
@@ -157,21 +185,9 @@ nav {
     color: #ffffff;
 }
 
-.user-profile {
 
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 
-}
 
-.user-profile img {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-}
 
 .theme-btn {
     display: flex;
@@ -359,8 +375,9 @@ nav {
     text-align: center;
 
 }
+
 .clp {
-    padding:  2rem 0;
+    padding: 2rem 0;
 }
 
 .img-group {
@@ -393,10 +410,11 @@ nav {
 }
 
 .img-group img {
-    background: white;
+    background: transparent;
     width: auto;
     height: 50%;
     object-fit: contain;
+    filter: var(--img-filter);
 }
 
 .img-group div {
@@ -421,7 +439,7 @@ nav {
 
 .internships {
     padding-top: 3rem;
-    background: #f3f4f6;
+    background: var(--section-bg);
     padding-bottom: 3rem;
 
 }
@@ -438,8 +456,9 @@ nav {
 
 .intern-container .riben,
 .riben {
-    background: white;
+    background: var(--riben-bg);
     border-radius: 50px;
+    color: var(--theme-text-primary);
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -455,8 +474,9 @@ nav {
 
 .riben span {
     padding: 5px 10px;
-    background: black;
-    color: white;
+    background-color: var(--bg-reverse);
+    color: var(--color-reverse);
+    font-weight:600 ;
     border-radius: 50px;
     margin-right: .5rem;
 }
@@ -605,7 +625,6 @@ nav {
 
 .top h2 {
     font-size: min(48px, 8vw);
-    color: black;
     margin: 0 3vw;
     margin-bottom: 24px;
 
@@ -626,7 +645,7 @@ nav {
 }
 
 .card {
-    background: white;
+    background: var(--card-bg);
     /* color: green; */
     border-radius: 1rem;
     padding: min(5vw, 2rem);
@@ -665,7 +684,7 @@ nav {
 
 .card h2 {
     font-size: 24px;
-    color: black;
+    color: var(--theme-text-primary);
     padding-bottom: 16px;
 
 }
@@ -698,7 +717,7 @@ nav {
 
 .basic-card {
     flex-direction: row;
-    background-color: rgba(255, 252, 252, 0.8);
+    background-color: --bsic-bg;
 
 }
 
@@ -713,7 +732,7 @@ nav {
     align-items: center;
     text-align: center;
     width: 100%;
-    background-color: #f1f8f4;
+    background-color: var(--basic-bg);
     /* margin: 0 min(5vw, 2rem); */
 }
 
@@ -779,7 +798,7 @@ nav {
 
 .content-head .rotated-riben {
     position: absolute;
-    background: rgb(223 244 232);
+    background: var(--rotated-riben-bg);
     transform: rotate(-5deg);
     width: 150vw;
     height: 400px;
@@ -899,8 +918,9 @@ nav {
     margin-bottom: 4rem;
 }
 
+
+
 .internee-career .card .icon {
-    background: white;
     border-radius: 0;
 }
 
@@ -910,7 +930,7 @@ nav {
 
 .progress-card,
 .resource-card {
-    background: #f9f9f9;
+    background: var(--card-bg);
 }
 
 .progress-card .phase:not(:nth-child(2)) {
@@ -925,7 +945,7 @@ nav {
 
 .progress-card .phase {
     padding: 1rem;
-    background: #ffffff;
+    background: var(--phase-bg);
 }
 
 .phase h4 {
@@ -961,7 +981,7 @@ nav {
 
 .resource-card .resource {
     padding: 1rem;
-    background: #ffffff;
+    background: var(--phase-bg);
     display: flex;
     justify-content: start;
     align-items: start;
@@ -1061,7 +1081,6 @@ nav {
 
 .interview-cards .card {
     padding: 1.5rem;
-    background: white;
 }
 
 .interview-cards .card h2 {
@@ -1083,7 +1102,7 @@ nav {
 
 .journey {
     width: 100%;
-    background: rgb(240, 240, 240);
+    background: var(--journy-bg);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -1096,11 +1115,14 @@ nav {
 .three-step {
     max-width: 36rem;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .journey-content .white {
+    text-align: center;
     border-radius: 2rem;
-    background: rgb(253, 253, 253);
+    background: var(--bg-reverse);
+    color: var(--color-reverse);
     padding: 3px 12px;
     /* display: inline; */
     width: fit-content;
@@ -1111,7 +1133,6 @@ nav {
 
 .journey-content h1 {
     font-size: 48px;
-    color: black;
     letter-spacing: 1.5px;
     font-weight: 600;
 
@@ -1237,7 +1258,6 @@ nav {
 
 .car-container h1 {
     font-size: 48px;
-    color: black;
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
@@ -1250,7 +1270,7 @@ nav {
 /* styling knowlege section  */
 .knowledge-section {
     width: 100%;
-    background: white;
+    /* background: white; */
 }
 
 .knowledge-container {
@@ -1274,7 +1294,7 @@ nav {
 
 .knowledge-card {
     width: 100%;
-    background: rgb(241 248 244);
+    background: var(--basic-bg);
 }
 
 .knowledge-card .green {
@@ -1369,7 +1389,8 @@ nav {
 
 .left-com span {
     padding: .25rem 1rem;
-    background: #f3f4f6;
+    background: var(--bg-reverse);
+    color: var(--color-reverse);
     font-size: 16px;
     border-radius: 9999px;
 
@@ -1386,6 +1407,10 @@ nav {
     font-size: 18px;
     font-weight: 100;
     padding: 1.2rem 2rem;
+    
+}
+.left-com .btn-green:hover {
+    background: rgb(11, 100, 11);
 }
 
 .mb-3 {
@@ -1412,6 +1437,7 @@ nav {
 }
 
 .sld-card {
+    color: black;
     position: relative;
     display: flex;
     justify-self: center;
@@ -1499,13 +1525,12 @@ nav {
 
 .black-container .riben {
     width: fit-content;
-    color: black;
+    color: var(--theme-text-primary);
     margin-bottom: 2rem;
 }
 
 .black-container h2 {
     font-size: 30px;
-    color: white;
     line-height: 1.625;
     font-weight: 500;
     margin-bottom: 2rem;
@@ -1552,6 +1577,7 @@ nav {
 }
 
 .counter p {
+    
     font-size: 18px;
     color: rgb(127, 127, 127);
 }
@@ -1570,7 +1596,8 @@ nav {
 
 /* styling footer     */
 .footer {
-    background: rgb(239, 239, 239);
+    background: var(--footer-bg);
+    color: var(--theme-text-primary);
     width: 100%;
 
 }
@@ -1782,7 +1809,7 @@ nav {
     padding: 2rem;
     border-radius: 20px;
     border-top-right-radius: none;
-    background: #f3f4f6;
+    background: var(--basic-bg);
     min-height: 90vh;
 }
 
@@ -1842,7 +1869,7 @@ nav {
     left: 30%;
     width: 45%;
     padding: 2rem;
-    background-color: #f5f5f5;
+    background-color: var(--unlock-bg);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1);
     border-radius: 20px;
 }
@@ -1854,14 +1881,13 @@ nav {
 
 .unlock p {
     font-size: 18px;
-    color: #000000cc;
+    color: var(--theme-text-primary);
     line-height: 1.6rem;
 }
 
 .potential {
     width: 100%;
     padding: 4rem 0;
-    background: rgb(249 250 251);
 }
 
 .pot-container {
@@ -1881,7 +1907,7 @@ nav {
     padding: 0;
     border-radius: 0;
     box-shadow: 0 4px 6px -1px rgb(0, 0, 0, .1);
-    border: 1px solid rgb(222, 222, 222);
+    /* border: 1px solid rgb(222, 222, 222); */
     border-radius: 5px;
 
 
@@ -1889,13 +1915,16 @@ nav {
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-duration: .15s;
 }
+.pot-container .card:hover .r-white h3 {
+color: green;
 
+}
 .pot-container .card:hover {
     transform: scale(1.1);
 }
 
 .card .l-gray {
-    background: rgb(243 244 246);
+    /* background: rgb(243 244 246); */
     padding: 1.5rem;
     height: 100%;
     display: flex;
@@ -1949,7 +1978,7 @@ nav {
 }
 
 .c-card {
-    background: rgb(249 250 251);
+    background: var(--card-bg);
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -2124,7 +2153,7 @@ nav {
     margin-top: 3rem;
     padding: 3rem 1.5rem;
     border-radius: 20px;
-    background: #f3f4f6;
+    background: var(--section-bg);
     text-align: center;
 }
 
@@ -2152,21 +2181,24 @@ nav {
 }
 
 .intern-apply .cards .intern-card {
-    background: white;
+    background: var(--card-bg);
     height: fit-content;
     transition: all .3s ease-in;
 }
+
 .intern-apply .cards .intern-card:hover {
     transform: scale(1.1);
 }
 
 .cards .intern-card h4 {
     padding: 20px;
+    color: var(--theme-text-secondary);
 }
 
 .cards .intern-card .details {
     margin: 0;
-    background: white;
+    /* background: white; */
+    color: var(--theme-text-primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2175,15 +2207,16 @@ nav {
 .cards .intern-card .details img {
     display: none;
 }
+
 .cards .intern-card .details a {
     font-weight: bold;
     background: var(--theme-color);
     color: white;
     margin: 1rem;
-    padding: .5rem  1rem;
+    padding: .5rem 1rem;
     border-radius: 10px;
 
-    
+
 }
 
 
@@ -2216,7 +2249,7 @@ nav {
 
 .count-i p {
     font-size: 20px;
-    font-weight: bold ;
+    font-weight: bold;
 }
 
 
@@ -2257,6 +2290,10 @@ nav {
         display: none;
     }
 
+    .intern-card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .top p {
         margin: 0 3vw;
     }
@@ -2279,6 +2316,19 @@ nav {
     .list-menu {
         display: flex;
     }
+    .link-btn{
+        background: transparent;
+        color: var(--theme-text-primary);
+        cursor: pointer;
+        transition: inherit;
+        color: var(--btn-green);
+    }
+
+    .link-btn:hover{
+        color: green;
+    }
+   
+
 
     .hero .shadow {
         animation: none;
@@ -2306,6 +2356,7 @@ nav {
 
     .community {
         gap: 8rem;
+        /* background: var(--bg-accent); */
     }
 
     .industry-cards {
@@ -2325,10 +2376,11 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
-    .intern-apply .cards{
+    .intern-apply .cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    .intern-main{
+
+    .intern-main {
         padding: 2rem;
     }
 
@@ -2350,6 +2402,7 @@ nav {
 
 /* media query max-width 768  */
 @media (max-width: 768px) {
+
 
     .card-container {
         grid-template-columns: 1fr;
@@ -2400,11 +2453,11 @@ nav {
         grid-template-columns: 1fr;
     }
 
-     .intern-main{
+    .intern-main {
         padding: 1rem;
     }
 
-    .intern-head{
+    .intern-head {
         flex-direction: column;
     }
 
@@ -2413,6 +2466,19 @@ nav {
 
 
 
+
+
+
+}
+
+
+
+/* media query max-width 768  */
+@media (max-width: 540px) {
+
+    .intern-card-container {
+        grid-template-columns: 1fr;
+    }
 
 
 

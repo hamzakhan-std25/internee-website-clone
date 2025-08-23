@@ -1,19 +1,19 @@
 
-import '../styles/global.css'
+import '../../styles/global.css'
 
-import Hero from './Home/Hero'
-import Collaborative from './Home/Collaborative';
-import Intern from './Home/Intern';
-import Skill from './Home/Skill';
-import Content from './Home/Content';
-import Career from './Home/Career';
-import Interview from './Home/Interview';
-import Journey from './Home/Journey';
-import Coach from './Home/Coach';
-import Knowledge from './Home/Knowledge';
-import Comm from './Home/Comm';
-import Blc from './Home/Blc';
-import Cnt from './Home/Cnt';
+import Hero from './Hero'
+import Collaborative from './Collaborative';
+import Intern from './Intern';
+import Skill from './Skill';
+import Content from './Content';
+import Career from './Career';
+import Interview from './Interview';
+import Journey from './Journey';
+import Coach from './Coach';
+import Knowledge from './Knowledge';
+import Comm from './Comm';
+import Blc from './Blc';
+import Cnt from './Cnt';
 
 // hero section object of projects
 
@@ -56,7 +56,7 @@ import Cnt from './Home/Cnt';
 
 
 
-export default function Home() {
+export default function Home({isDarkMode}) {
 
 
 
@@ -67,7 +67,7 @@ export default function Home() {
       {/* hero section  */}
 
       <section className="hero">
-        <Hero />
+        <Hero isDarkMode={isDarkMode}/>
       </section>
       {/* collaboration section  */}
 

@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+
 
 import logo from '../assets/icons/logo.png';
 import white_logo from '../assets/icons/white-internee.png';
-import profile_pic from '../assets/images/profile_pic.avif';
 import NavLinks from './NavLinks';
 
-export default function Navbar() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+export default function Navbar({isDarkMode, setDarkMode}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuRef = useRef(null); // ✅ reference for mobile menu
@@ -16,7 +16,7 @@ export default function Navbar() {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
-      setIsDarkMode(true);
+      setDarkMode(true);
       document.documentElement.setAttribute('data-theme', 'dark');
     }
   }, []);
@@ -27,7 +27,7 @@ export default function Navbar() {
 
   const changeTheme = () => {
     const newTheme = isDarkMode ? 'light' : 'dark';
-    setIsDarkMode(!isDarkMode);
+    setDarkMode(!isDarkMode);
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
   };
@@ -47,6 +47,7 @@ export default function Navbar() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
+
   }, [isOpen]);
 
   return (
@@ -62,12 +63,26 @@ export default function Navbar() {
         <NavLinks isSmallScreen={false} />
 
         <div className="menu-btns">
+          
           <NavLink to="/jobs" className="btn-green">Job portal</NavLink>
-          <NavLink to="/signin" className="btn-green btn-bottom">Sign in</NavLink>
 
-          <div className="user-profile">
-            <img src={profile_pic} alt="profile pic" />
-          </div>
+            <SignedOut>
+              <SignInButton className='btn-green btn-bottom' />
+            </SignedOut> 
+          
+
+          
+
+          <SignedIn>
+            
+              <button className='btn-white'>
+                DashBoard
+              </button>
+
+            <UserButton />
+          </SignedIn>
+
+
 
           {/* Dark/Light Theme Toggle */}
           <div className="theme-btn" onClick={changeTheme}>
