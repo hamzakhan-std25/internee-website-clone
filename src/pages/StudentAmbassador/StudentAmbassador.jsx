@@ -8,7 +8,7 @@ export default function StudentAmbassador() {
   return (
     <div className='amb-page'>
 
-      <div className="amb-img"><img src={amb_img} alt="" />
+  <div className="amb-img"><img src={amb_img} alt="Student Ambassador" loading="lazy" />
         <div className="content-layer">
           <div className="heading"><h1>Internee.pk Student Ambassador</h1></div>
         </div>
@@ -22,7 +22,7 @@ export default function StudentAmbassador() {
               <a href="#" className="btn-green">Get Started</a>
             </div>
             <div className="bil-container">
-              <div className="img-content"><img src={building} alt="bilding" />
+              <div className="img-content"><img src={building} alt="Ambassador building" loading="lazy" />
               </div>
               <div className="unlock">
                 <h2>Unlock Your Potential</h2>

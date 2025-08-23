@@ -20,7 +20,7 @@ export default function GraduateProgram() {
           <div className="ex-card">
             <a href='#' className="card">
               <div className="ex-img">
-                <img src={ind_img} alt="industry img" />
+                <img src={ind_img} alt="Healthcare industry" loading="lazy" />
                 <div className="ex-layer"></div>
               </div>
               <div className='ex-content'>
@@ -32,7 +32,7 @@ export default function GraduateProgram() {
           <div className="ex-card">
             <a href='#' className="card">
               <div className="ex-img">
-                <img src={ind2_img} alt="industry img" />
+                <img src={ind2_img} alt="Healthcare industry 2" loading="lazy" />
                 <div className="ex-layer"></div>
               </div>
               <div className='ex-content'>
@@ -44,7 +44,7 @@ export default function GraduateProgram() {
           <div className="ex-card">
             <a href='#' className="card">
               <div className="ex-img">
-                <img src={ind3_img} alt="industry img" />
+                <img src={ind3_img} alt="Healthcare industry 3" loading="lazy" />
                 <div className="ex-layer"></div>
               </div>
               <div className='ex-content'>

@@ -11,12 +11,12 @@ export default function Collaborative() {
    <>
     <p className='clp'>Collaborated with Trusted Worldwide Partners</p>
         <div className="img-group">
-          <a href="#"><div className='hide-d'></div><img src={pic1} alt="pic1" /></a>
-          <a href="#"><div className='hide-d'></div><img src={pic2} alt="pic2" /></a>
-          <a href="#"><div className='hide-d'></div><img src={pic3} alt="pic3" /></a>
-          <a href="#"><div className='hide-d'></div><img src={pic4} alt="pic4" /></a>
-          <a href="#"><div className='hide-d'></div><img src={pic5} alt="pic5" /></a>
-          <a href="#"><div className='hide-d'></div><img src={pic6} alt="pic6" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic1} alt="Cloud partner logo" loading="lazy" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic2} alt="SEE partner logo" loading="lazy" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic3} alt="Collaboration partner logo" loading="lazy" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic4} alt="Logo1 partner logo" loading="lazy" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic5} alt="NICS partner logo" loading="lazy" /></a>
+          <a href="#"><div className='hide-d'></div><img src={pic6} alt="PITB partner logo" loading="lazy" /></a>
         </div>
    </>
   )

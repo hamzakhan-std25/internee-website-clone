@@ -7,6 +7,8 @@ A modern multi-page React application for showcasing internship opportunities, g
 ## 📌 Features
 - **Multi-page routing** with `react-router-dom`
 - **Responsive design** with global styling
+- **Login & authentication** (Clerk integration)
+- **Dark mode** toggle for user preference
 - **Reusable card components** for dynamic content rendering
 - **SVG-based icons** (Lucide) for sharp, scalable graphics
 - **Dynamic counters** with `react-countup`
@@ -21,12 +23,12 @@ A modern multi-page React application for showcasing internship opportunities, g
 ## 📂 Project Structure
 src/
 │
-├── components/ # Navbar, Footer, Card components
-├── pages/ # Home, Internship, GraduateProgram, StudentAmbassador
-├── assets/ # Images & icons
-├── styles/ # global.css and other styles
-├── App.jsx # Main application routes
-└── main.jsx # Entry point
+├── components/ # Navbar, Footer, Card components <br>
+├── pages/ # Home, Internship, GraduateProgram, StudentAmbassador <br>
+├── assets/ # Images & icons <br>
+├── styles/ # global.css and other styles <br>
+├── App.jsx # Main application routes <br>
+└── main.jsx # Entry point <br>
 
 ---
 
@@ -49,6 +51,7 @@ npm run dev
 ```
 The app will be available at http://localhost:5173 (or as specified by Vite).
 
+
 ## 🛠️ Tech Stack
 - React (with hooks)
 - React Router DOM
@@ -57,11 +60,33 @@ The app will be available at http://localhost:5173 (or as specified by Vite).
 - Lucide Icons (SVG icons)
 - react-countup (animated counters)
 
+## ♿ Accessibility
+- All images have descriptive `alt` text for screen readers
+- Decorative images use `alt=""` to be ignored by assistive tech
+- Semantic HTML and ARIA labels where appropriate
+
+## ⚡ Performance & Optimization
+- All images use `loading="lazy"` for faster page loads
+- Optimized SVG icons and compressed images
+- Modular components for efficient rendering
+
+## 📈 Best Practices
+- Unique keys for list rendering
+- Reusable and maintainable component structure
+- Clear code comments for complex logic
+
+## 📬 Contact
+For questions or feedback, please contact [hamzakhan.cs@gmail.com] or open an issue on GitHub.
+
+
+## 🌐 Live Demo
+Access the live app here: [https://internee-website-clone-cz4q7lpzg-hamzakhan-std25s-projects.vercel.app/](https://internee-website-clone-cz4q7lpzg-hamzakhan-std25s-projects.vercel.app/)
+
 ## 🎥 Preview
 (Replace preview.gif with your actual file once created)
 
 ## 📸 Screenshots
-(Add screenshots here to showcase the UI)
+![Internee ui](ui.png)
 
 ## 📄 License
 This project is licensed under the MIT License — feel free to use and modify for your own projects.

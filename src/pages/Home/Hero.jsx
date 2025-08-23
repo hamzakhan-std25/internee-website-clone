@@ -36,8 +36,8 @@ export default function Hero({isDarkMode}) {
                 </div>
                 {
                   isDarkMode ?
-                  <img src={groupImg} alt="group-img" />:
-                  <img src={groupImgdark} alt="group-img" />
+                  <img src={groupImg} alt="Group of interns - light mode" loading="lazy" />:
+                  <img src={groupImgdark} alt="Group of interns - dark mode" loading="lazy" />
                 }
       
               </div>
