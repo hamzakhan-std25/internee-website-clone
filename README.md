@@ -21,8 +21,8 @@ A modern multi-page React application for showcasing internship opportunities, g
 ---
 
 ## 📂 Project Structure
-src/
-│
+src/ <br>
+│ <br>
 ├── components/ # Navbar, Footer, Card components <br>
 ├── pages/ # Home, Internship, GraduateProgram, StudentAmbassador <br>
 ├── assets/ # Images & icons <br>
@@ -86,6 +86,7 @@ Access the live app here: [https://internee-website-clone-cz4q7lpzg-hamzakhan-st
 (Replace preview.gif with your actual file once created)
 
 ## 📸 Screenshots
+![Internee ui](clone.png)
 ![Internee ui](ui.png)
 
 ## 📄 License
